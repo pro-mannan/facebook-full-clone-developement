@@ -260,3 +260,85 @@ input.login_btn{
 .fb_footer{
    padding-bottom:20px;
 }
+
+
+
+/*
+   facebook home page styleing start now
+
+
+*/
+
+header.home{
+   height: 56px;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #fff;
+   padding: 0 20px;
+   border-bottom: 1px solid #ccc;
+}
+
+.serach_area{
+   display:flex;
+   align-items: center;
+}
+.logo{
+   width:40px;
+   height: 100%;
+}
+.logo a{
+   display:block;
+}
+.logo a img{
+   width:100%;
+   height: 100%;
+}
+
+.serach_now{
+   width:280px;
+   background-color: #dfe2e8;
+   border-radius: 25px;
+   padding: 10px 15px;
+   font-family: inherit;
+   margin-left:10px;
+   display:flex;
+   align-items: center;
+}
+.serach_now input{
+   background-color: #dfe2e8;
+   border: none;
+   outline:none;
+   flex: 1;
+   height:100%;
+}
+.serach_now input::placeholder{
+   color:rgb(160, 160, 160);
+   font-size:15px;
+}
+.serach_now i{
+   width:28px;
+   color:rgb(160, 160, 160);
+   font-size:15px;
+}
+
+
+/* facebook hobe page navigation bar styleing start now */
+nav.fb_nav ul{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav.fb_nav ul li{
+   background-color: #dfe2e8;
+   padding: 10px 40px;
+   border-radius:10px;
+   margin: 0 3px;
+}
+
+
+/* facebook home page fb_h_user section styleing start now */
+.fb_h_user ul{
+   display:flex;
+}
