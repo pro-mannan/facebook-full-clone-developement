@@ -296,7 +296,7 @@ header.home{
 }
 
 .serach_now{
-   width:280px;
+   width:240px;
    background-color: #dfe2e8;
    border-radius: 25px;
    padding: 10px 15px;
@@ -306,11 +306,12 @@ header.home{
    align-items: center;
 }
 .serach_now input{
-   background-color: #dfe2e8;
+   background-color: unset;
    border: none;
    outline:none;
    flex: 1;
    height:100%;
+   padding: 3px 0;
 }
 .serach_now input::placeholder{
    color:rgb(160, 160, 160);
@@ -329,16 +330,97 @@ nav.fb_nav ul{
    justify-content: space-between;
    align-items: center;
 }
-
 nav.fb_nav ul li{
-   background-color: #dfe2e8;
-   padding: 10px 40px;
+   margin: 0 6px;
+}
+nav.fb_nav ul li a{
+   padding: 13px 40px;
    border-radius:10px;
    margin: 0 3px;
+   transition: 0.4s;
+   position: relative;
 }
 
+nav.fb_nav ul li a:hover{
+   background-color: #dfe2e8;
+}
+nav.fb_nav ul li a.active{
+   border-bottom: 3px solid #1B74E4;
+   border-radius:unset;
+   background-color: unset;
+}
+nav.fb_nav ul li a.active i{
+   color: #1B74E4;
+}
+
+nav.fb_nav ul li a i{
+   font-size: 22px;
+   color:#656669;
+}
+
+nav.fb_nav ul li a::after{
+   display:none;
+   content: attr(data-tag);
+   position:absolute;
+   padding:  8px 12px;
+   border-radius:8px;
+   background-color:#65676B;
+   bottom:-37px;
+   left: 50%;
+   color:#fff;
+   font-size:13px;
+   transform: translateX(-50%);
+   transition: 0.4s;
+}
+nav.fb_nav ul li a:hover:after{
+   display:block;
+}
 
 /* facebook home page fb_h_user section styleing start now */
 .fb_h_user ul{
    display:flex;
+   align-items: center;
+
+}
+
+.fb_h_user ul li a{
+   margin: 0 10px;
+   width:40px;
+   background-color: #D8DADF;
+   height: 40px;
+   border-radius:50%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   transition: .4s;
+}
+.fb_h_user ul li a:hover{
+   background-color: #b5b8bd;
+}
+.fb_h_user ul li a::after{
+   display:none;
+   content: attr(data-user);
+   position:absolute;
+   padding:  8px 12px;
+   border-radius:8px;
+   background-color:#65676B;
+   bottom:-37px;
+   left: 50%;
+   color:#fff;
+   font-size:13px;
+   transform: translateX(-50%);
+   transition: 0.4s;
+}
+.fb_h_user ul li a:hover:after{
+   display:block;
+}
+.fb_h_user ul li a i{
+   color: #4c4f55;
+   font-size: 20px;
+}
+.fb_h_user ul li a img{
+   width:100%;
+   height:100%;
+   border-radius:50%;
 }
