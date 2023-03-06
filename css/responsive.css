@@ -1,0 +1,50 @@
+@media screen and (max-width:1100px) {
+    .serach_now{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    .serach_now input{
+        display:none;
+    }
+}
+@media screen and (max-width:991px) {
+
+     /* header user ul tag */
+    nav.fb_nav ul li:last-child{
+        display: flex;
+     }
+    nav.fb_nav ul li:nth-child(5){
+        display: none;
+    }
+
+     /* header user ul tag */
+    .fb_h_user ul li:nth-child(2){
+        display:flex;
+     }
+    .fb_h_user ul li:nth-child(1){
+        display:none;
+     }
+     nav.fb_nav ul li a {
+        padding: 12px 25px;
+    }
+
+
+}
+@media screen and (max-width:768px) {
+    nav.fb_nav{
+        display:none;
+    }
+
+    .nav-create{
+        display:block;
+        margin-left: 15px;
+     }
+     .nav-create li{
+        padding: 15px;
+     }
+    .nav-create li a i{
+        font-size: 22px;
+    }
+
+}

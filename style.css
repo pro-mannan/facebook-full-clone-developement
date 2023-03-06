@@ -333,6 +333,9 @@ nav.fb_nav ul{
 nav.fb_nav ul li{
    margin: 0 6px;
 }
+nav.fb_nav ul li:last-child{
+   display: none;
+}
 nav.fb_nav ul li a{
    padding: 13px 40px;
    border-radius:10px;
@@ -373,6 +376,13 @@ nav.fb_nav ul li a::after{
    transition: 0.4s;
 }
 nav.fb_nav ul li a:hover:after{
+   display:block;
+}
+.nav-create{
+   display:none;
+}
+
+.nav-create li a:hover:after{
    display:block;
 }
 
@@ -423,4 +433,8 @@ nav.fb_nav ul li a:hover:after{
    width:100%;
    height:100%;
    border-radius:50%;
+}
+
+.fb_h_user ul li:nth-child(2){
+   display:none;
 }
