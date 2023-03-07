@@ -7,6 +7,9 @@
     .serach_now input{
         display:none;
     }
+    .left_side{
+        display:none;
+    }
 }
 @media screen and (max-width:991px) {
 
@@ -28,8 +31,13 @@
      nav.fb_nav ul li a {
         padding: 12px 25px;
     }
+    
 
-
+}
+@media screen and (max-width: 900px) {
+    .right_side{
+        display:none;
+    }
 }
 @media screen and (max-width:768px) {
     nav.fb_nav{

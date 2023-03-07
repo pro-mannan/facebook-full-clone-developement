@@ -270,6 +270,10 @@ input.login_btn{
 */
 
 header.home{
+   position: fixed;
+   top:0px;
+   left:0px;
+   width: 100%;
    height: 56px;
    display:flex;
    align-items: center;
@@ -437,4 +441,116 @@ nav.fb_nav ul li a:hover:after{
 
 .fb_h_user ul li:nth-child(2){
    display:none;
+}
+
+
+
+/* facebook main section start */
+main{
+   max-width: 1464px;
+   width: 100%;
+   margin: 0 auto;
+   display:flex;
+   justify-content: space-between;
+}
+
+.left_side,
+.right_side{
+   background-color: #36a420;
+   flex-basis: 364px;
+   height: 100vh;
+   transition: 0.4s;
+   padding-top: 56px;
+}
+
+.body_section{
+   flex-grow: 1;
+   height: 100vh;
+   background-color:#000;
+   padding-top: 56px;
+} 
+
+
+
+.left_side{
+   padding: 70px 15px 0 15px;
+   background-color:#F0F2F5;
+   overflow: auto;
+}
+.body_left_nav li a{
+   padding: 5px;
+   border-radius: 10px;
+}
+.body_left_nav li a:hover{
+   background-color: #d3d3d3;
+}
+
+.body_left_nav li a{
+   color: #050505;
+   display:flex;
+   align-items: center;
+}
+.body_left_nav li a img{
+   width: 34px;
+   height: 34px;
+   margin-right: 10px;
+}
+.body_left_nav li:first-child a img{
+   border-radius:50%;
+}
+
+
+.body_left_nav li:last-child a i{
+   margin-right: 10px;
+   padding: 10px;
+   background-color:#D8DADF;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.divaider{
+   width: 100%;
+   height: 1px;
+   background-color: #CACDD2;
+   margin-top: 15px;
+}
+
+.yourshortcut{
+   margin-top: 20px;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.yourshortcut h4{
+   color:#6C6E73;
+   font-weight: 600;
+   font-size: 16px;
+   margin-left: 5px;
+   padding: 5px;
+}
+
+.yourshortcut button{
+   display:none;
+   background-color: unset;
+   border: none;
+   outline: none;
+   color:#2372DF;
+   padding: 7px;
+   cursor: pointer;
+   margin-right: 7px;
+   border-radius: 7px;
+   transition: 0.4s;
+}
+
+.yourshortcut:hover button{
+   display:block;
+}
+
+.yourshortcut button:hover{
+   background-color:rgb(160, 160, 160);
 }
